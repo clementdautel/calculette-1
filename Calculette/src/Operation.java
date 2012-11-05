@@ -7,6 +7,7 @@ public abstract class Operation {
 		HashMap<String, Operation> operations = new HashMap<String, Operation>();
 		operations.put("+", new Addition());
 		operations.put("-", new Soustraction());
+		operations.put("*", new Multiplication());
 		
 		return operations.get(operateur);
 	}

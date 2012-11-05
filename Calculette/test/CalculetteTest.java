@@ -74,4 +74,13 @@ public class CalculetteTest {
 			.click(3);
 		assertEquals((Double)1.0, this.calculette.getResultat());
 	}
+	
+	@Test
+	public void enCliquantTroisFoisDeuxResultatRetourneSix() {
+		this.calculette
+			.click(3)
+			.click("*")
+			.click(2);
+		assertEquals((Double)6.0, this.calculette.getResultat());
+	}
 }
