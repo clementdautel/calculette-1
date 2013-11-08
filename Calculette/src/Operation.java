@@ -8,6 +8,7 @@ public abstract class Operation {
 		operations.put("+", new Addition());
 		operations.put("-", new Soustraction());
 		operations.put("*", new Multiplication());
+		operations.put("/", new Division());
 		
 		return operations.get(operateur);
 	}

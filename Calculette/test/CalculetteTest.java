@@ -83,4 +83,13 @@ public class CalculetteTest {
 			.click(2);
 		assertEquals((Double)6.0, this.calculette.getResultat());
 	}
+	
+	@Test
+	public void enCliquantTroisDiviseParDeuxResultatRetourneUnEtDemi() {
+		this.calculette
+			.click(3)
+			.click("/")
+			.click(2);
+		assertEquals((Double)1.5, this.calculette.getResultat());
+	}
 }
